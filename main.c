@@ -21,7 +21,7 @@ int main()
     switch(opcion)
         {
             case 1:
-                altaProducto(eProducto);
+                    altaProducto(producto);
 
                 break;
             case 2:
