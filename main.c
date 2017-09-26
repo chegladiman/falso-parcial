@@ -14,14 +14,15 @@ int main()
     int opcion=0;
 
     printf("Bienvenido! Desea operar?\n\n\n");
+
+
     menu();
-
-    scanf("%d",opcion);
-
+ scanf("%d",opcion);
+    while(seguir=='s'){
     switch(opcion)
         {
             case 1:
-                    altaProducto(producto);
+                    //altaProducto(eProducto producto);
 
                 break;
             case 2:
@@ -42,11 +43,8 @@ int main()
                 seguir = 'n';
                 break;
 
-
-
-
     }
             return 0;
 }
-
+}
 
