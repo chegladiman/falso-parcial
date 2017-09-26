@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1506386008 source:c:\users\alumno\desktop\falso_parcial_atr\cabron.c
+	<stdio.h>
+	<stdlib.h>
+	"cabron.h"
+
+1506386274 c:\users\alumno\desktop\falso_parcial_atr\cabron.h
+
+1506385613 source:c:\users\alumno\desktop\falso_parcial_atr\main.c
+	<stdio.h>
+	<stdlib.h>
+	"cabron.h"
+
