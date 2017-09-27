@@ -1,20 +1,31 @@
-typedef struct producto{
+#include <stdio.h>
+#include <stdlib.h>
+
+
+typedef struct{
 
 int nombreprod;
-int codprod;
 char descriprod[51];
 int cantidad;
 int precio;
 }eProducto;
 
-typedef struct proveedor{
+typedef struct {
 
-int codprov;
-char descriprov[50];
+char descriprov[51];
 }eProveedor;
+
+typedef struct {
+int codproducto;
+int codprov;
+}eProdprov;
 
 int menu();
 
-void altaProducto(eProducto);
+void altaProducto(eProducto producto[], eProveedor proveedor[], eProdprov prodprov[]);
+
+void bajaProducto(eProducto producto[], eProveedor proveedor[], eProdprov prodprov[]);
+
+
 
 

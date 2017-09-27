@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "cabron.h"
 #define CANT 5
 
@@ -10,8 +11,6 @@
 int menu (){
 
     int opcion;
-
-    {
 
         printf("1- Alta producto\n");
         printf("2- Modificar producto\n");
@@ -24,15 +23,37 @@ int menu (){
         printf("Opcion seleccionada: ");
         scanf("%d",&opcion);
 
-        }
+    return opcion;
 
-void altaProducto(eProducto producto[])
+}
+
+void altaProducto(eProducto producto[], eProveedor proveedor[], eProdprov prodprov[])
 {
-    int i;
-    printf("Ingresar nombre de producto: ");
-    scanf("%d",producto[i].nombreprod);
 
-    printf(producto[i].nombreprod);
+
+    int i;
+    for(i=0;i<CANT;i++){
+
+    printf("Ingresar nombre de producto: ");
+    scanf("%s", producto[i].nombreprod);
+
+    printf("Ingresar cantidad: ");
+    scanf("%d", producto[i].cantidad);
+
+    printf("Ingresar precio: ");
+    scanf("%d", producto[i].precio);
+
+    printf("Ingresar codigo de producto: ");
+    scanf("%d", prodprov[i].codprov);
+
+    printf("Ingresar proveedor: ");
+    scanf("%s", prodprov[i].codprov);
+
+
+
+
+        }return 0;
+
 
 }
 
@@ -61,9 +82,30 @@ void validarMenu(int menu)
         printf("\nEs un numero");
     }
 
-    return 0;
-}
+
 }
 
+void bajaProducto(eProducto producto[], eProveedor proveedor[], eProdprov prodprov[])
+{
 
+    int i;
+    int j;
+    int codprodAux;
+
+    printf("\nIngresar codigo de producto:");
+    scanf("%d", &codprodAux );
+    for(i=0; i<CANT; i++)
+    {
+        if(prodprov[i].codproducto==codprodAux)
+        {
+            producto=0;
+            prodprov=0;
+            proveedor=0;
+
+
+
+        }
+    }
+
+}
 

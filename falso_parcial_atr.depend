@@ -11,3 +11,18 @@
 	<stdlib.h>
 	"cabron.h"
 
+1506468151 source:c:\users\alumno\desktop\falsoparcial\cabron.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cabron.h"
+
+1506472506 c:\users\alumno\desktop\falsoparcial\cabron.h
+	<stdio.h>
+	<stdlib.h>
+
+1506472506 source:c:\users\alumno\desktop\falsoparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"cabron.h"
+
